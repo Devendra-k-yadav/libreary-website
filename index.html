@@ -225,6 +225,51 @@
       margin:15px 0;
       font-size:18px;
     }
+    /* ================= LOCATION SECTION ================= */
+
+.location-container{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.map-box{
+  width:100%;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.location-notes h3{
+  font-size:32px;
+  margin-bottom:25px;
+  color:#0f172a;
+}
+
+.note-card{
+  background:white;
+  padding:18px;
+  margin-bottom:15px;
+  border-radius:10px;
+  font-size:17px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.note-card:hover{
+  transform:translateX(8px);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  .location-container{
+    grid-template-columns:1fr;
+  }
+
+}
 
     /* ================= FOOTER ================= */
 
@@ -449,15 +494,65 @@
 
   </section>
 
-  <section class="section" id="location">
+  <!-- ================= LOCATION SECTION ================= -->
+
+<section class="section" id="location">
 
   <h2 class="section-title">Our Location</h2>
 
-  <div style="width:100%; border-radius:15px; overflow:hidden;">
+  <div class="location-container">
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.7872299393794!2d82.48647617484444!3d25.41193182297066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fe10058adc3cd%3A0x79bbc523e45980ab!2sMondh%20bhadohi!5e0!3m2!1sen!2sus!4v1779702723763!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      
-    </iframe>
+    <!-- MAP -->
+
+    <div class="map-box">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.7872299393794!2d82.48647617484444!3d25.41193182297066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fe10058adc3cd%3A0x79bbc523e45980ab!2sMondh%20bhadohi!5e0!3m2!1sen!2sus!4v1779702723763!5m2!1sen!2sus"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </div>
+
+    <!-- NOTES -->
+
+    <div class="location-notes">
+
+      <h3>Why Choose Our Library?</h3>
+
+      <div class="note-card">
+        ✅ Peaceful and Silent Study Environment
+      </div>
+
+      <div class="note-card">
+        ✅ Comfortable Chairs and Spacious Desks
+      </div>
+
+      <div class="note-card">
+        ✅ Fully Air-Conditioned Study Rooms
+      </div>
+
+      <div class="note-card">
+        ✅ High-Speed WiFi for Online Learning
+      </div>
+
+      <div class="note-card">
+        ✅ Personal Charging Points Available
+      </div>
+
+      <div class="note-card">
+        ✅ Safe and Secure CCTV Monitoring
+      </div>
+
+      <div class="note-card">
+        ✅ Best Place for Competitive Exam Preparation
+      </div>
+
+    </div>
 
   </div>
 
